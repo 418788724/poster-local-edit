@@ -1,0 +1,100 @@
+.header {
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    padding: 20px;
+    background: #fff;
+    border-bottom: 1px solid #f2f2f2;
+    margin-bottom: 20px;
+    min-width: 500px;
+
+    .headerContent {
+        display: flex;
+        flex-flow: row-reverse nowrap;
+        justify-content: space-between;
+        align-items: center;
+
+        .headerRight {
+            margin-left: 40px;
+            display: flex;
+            align-items: center;
+            font-weight: 500;
+
+            & > div {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-flow: row nowrap;
+                border-radius: 8px;
+                padding: 0 12px;
+                height: 42px;
+                cursor: pointer;
+            }
+
+            .headerUpdate {
+                min-width: 80px;
+                background: rgb(242 242 242);
+
+                .updateText {
+                    margin-left: 10px;
+                }
+
+                &:hover {
+                    background: rgb(228 228 235);
+                }
+            }
+
+            .headerUser {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                background: rgb(242 242 242);
+                height: 50px;
+                width: 50px;
+                border-radius: 25px;
+                cursor: pointer;
+                position: relative;
+
+                &:hover {
+                    background: rgb(228 228 235);
+                }
+            }
+        }
+    }
+}
+
+// 头像下拉框
+.avatarDropdown {
+    padding: 20px;
+
+    :global {
+        .ant-dropdown-menu {
+            min-width: 192px;
+            padding: 20px;
+            border-radius: 20px 0 20px 20px;
+
+            .ant-dropdown-menu-item {
+                border-radius: 8px;
+                background-color: none;
+                padding: 12px;
+                color: rgb(60 60 72);
+
+                &:first-of-type {
+                    margin-bottom: 12px;
+                    border-radius: 0;
+                    border-bottom: 2px solid #eee;
+                }
+
+                &:first-of-type:hover,
+                .ant-dropdown-menu-submenu-title:first-of-type:hover {
+                    background-color: #fff !important;
+                }
+
+                &:not(:first-of-type):hover,
+                .ant-dropdown-menu-submenu-title:not(:first-of-type):hover {
+                    background-color: rgb(242 242 242) !important;
+                }
+            }
+        }
+    }
+}

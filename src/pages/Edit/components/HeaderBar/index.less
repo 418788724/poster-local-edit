@@ -1,0 +1,56 @@
+.header-bar-wrap {
+    margin-left: 15px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    // width: 100%;
+    height: 100%;
+    overflow-x: hidden;
+    color: #fff;
+
+    .bread {
+        display: flex;
+        flex-flow: row nowrap;
+        align-items: center;
+        font-size: 18px;
+        color: #fff;
+
+        .bread-item {
+            padding: 6px 10px;
+            max-width: 160px;
+            cursor: pointer;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+
+            &:hover {
+                background: #272731;
+            }
+
+            & > a {
+                color: #fff;
+            }
+        }
+
+        .bread-item:not(:first-child) {
+            min-width: 92px;
+        }
+
+        .ant-input {
+            padding: 4px 8px;
+            background-color: transparent;
+            background-image: linear-gradient(
+                to right,
+                rgb(40 144 149 / 26.9%),
+                rgb(85 207 152 / 8.1%)
+            );
+            border-color: #209fa5;
+            color: #fff;
+            font-size: 16px;
+        }
+
+        .bread-item-separator {
+            margin: 0 4px;
+        }
+    }
+}

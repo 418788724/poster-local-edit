@@ -1,0 +1,46 @@
+.editHeader {
+    padding: 12px 20px;
+    display: flex;
+    -webkit-box-pack: end;
+    justify-content: flex-end;
+    user-select: none;
+
+    .headerLeft {
+        flex: 1 1 0%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        overflow-x: hidden;
+    }
+
+    .headerRight {
+        display: flex;
+        margin-left: 8px;
+        -webkit-box-align: center;
+        align-items: center;
+        font-weight: 500;
+
+        .headerUpdate {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-flow: row nowrap;
+            margin-right: 20px;
+            border-radius: 8px;
+            padding: 0 12px;
+            height: 42px;
+            cursor: pointer;
+            min-width: 80px;
+            background-color: rgb(44 44 56);
+            color: #fff;
+
+            .updateText {
+                margin-left: 10px;
+            }
+
+            &:hover {
+                background-color: rgb(60 60 72);
+            }
+        }
+    }
+}
